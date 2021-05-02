@@ -1,0 +1,45 @@
+.episodeCard {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: rgb(34, 34, 34);
+  box-shadow: 10px 30px 30px rgba(20, 20, 19, 0.747);
+  margin: 1rem 0;
+}
+.episodeCard .imgWrapper {
+  margin-right: 1rem;
+}
+.episodeCard .container {
+  display: flex;
+}
+.episodeCard .imgWrapper img{
+  width: 200px;
+  border-radius: 5px;
+}
+.episodeCard .desc h2 {
+  max-width: 80%;
+}
+.episodeCard .desc p{
+ max-width: 80%;
+ margin: .5rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .episodeCard .container {
+    display: block;
+  }
+  .episodeCard .container .imgWrapper img{
+    width: 100%;
+  }
+  .episodeCard .container .imgWrapper {
+    margin-right: 0;
+    margin-bottom: .5rem;
+  }
+  .episodeCard .desc h2 {
+    max-width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .episodeCard .desc p {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,47 @@
+.home {
+  text-align: center;
+}
+.home h1 {
+  margin-bottom: 3rem;
+}
+.channelCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-gap: 1rem;
+  max-width: 1000px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.channelCards .channelCard {
+  cursor: pointer;
+}
+.channelCard .imgWrapper {
+  margin: auto;
+  max-width: 150px;
+}
+.channelCards .channelCard img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.channelCard .playing h3 {
+  margin: .5rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .channelCards{
+    grid-template-columns: repeat(auto-fill, 300px);
+
+  }
+  .channelCard {
+    display: flex;
+    text-align: start;
+    align-items: center;
+    margin: 0 1rem;
+  }
+  .channelCard .imgWrapper {
+    max-width: 100px;
+    align-self: flex-start;
+    margin: 0 1rem 0 0;
+  }
+}

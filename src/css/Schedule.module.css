@@ -1,0 +1,27 @@
+.schedule .inputs {
+  display: flex;
+
+}
+.schedule .select {
+  margin-right: 1rem;
+}
+
+.schedule .date input{
+  padding: .43rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+
+.schedule h2 {
+  margin: .8rem 0 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .schedule .inputs {
+    display: block;
+  }
+  .schedule .date {
+    margin-top: 1rem;
+  }
+}

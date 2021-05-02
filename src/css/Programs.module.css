@@ -1,0 +1,70 @@
+.programs h1{
+margin-bottom: 1rem;
+}
+.programs .select {
+  margin: 1rem 0;
+  max-width: 250px;
+}
+.programs .programCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 280px);
+  margin: auto;
+  grid-gap: 1rem;
+  justify-content: space-evenly;
+}
+.programs .programCard {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(34, 34, 34);
+  border-radius: 10px;
+  padding: .5rem;
+  box-shadow: 10px 30px 30px rgba(20, 20, 19, 0.747);
+  cursor: pointer;
+}
+.programCard .card {
+  display: flex;
+  align-items: center;
+}
+.programs .programCard .imgWrapper {
+ max-width: 70px;
+
+ margin-right: 1rem;
+}
+.programs .programCard .imgWrapper img{
+ width: 100%;
+ border-radius: 5px;
+}
+
+.programCards .button {
+  align-self: flex-start;
+  margin: 0 0 1rem 1rem;
+}
+.programCards .button button {
+  border-radius: 50%;
+  background-color: rgb(34, 34, 34);
+  color: white;
+  padding: 0 .3rem .2rem;
+  border: 2px solid white;
+  font-size: .8rem;
+  cursor: pointer;
+  transition: .3s;
+  font-weight: 700;
+}
+.programCards .button button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media only screen and (max-width: 600px){
+  .customSelect {
+    min-width: 80px;
+    width: 80px;
+  }
+}
+
+
+/* background: rgb(195,30,170);
+background: linear-gradient(90deg, rgba(195,30,170,1) 0%, rgba(255,90,0,1) 100%); */
+
+/* background: rgb(195,30,170);
+background: linear-gradient(90deg, rgba(50,205,215,1) 0%, rgba(0,200,140,1) 100%); */

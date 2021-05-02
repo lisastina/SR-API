@@ -1,0 +1,77 @@
+.itemCard {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 1rem 1.3rem 1rem 1rem;
+  background-color: rgb(34, 34, 34);
+  box-shadow: 10px 30px 30px rgba(20, 20, 19, 0.747);
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.itemCard .card {
+  display: flex;
+  align-items: center;
+}
+.itemCard .imgWrapper {
+  max-width: 100px;
+  margin-right: 1.2rem;
+}
+.itemCard .imgWrapper img {
+  width: 100%;
+  border-radius: 5px;
+}
+.itemCard h3 {
+  margin-bottom: .6rem;
+}
+.itemCard p {
+  font-size: 0.8rem;
+  margin-bottom: .4rem;
+}
+
+.itemCard .button {
+  align-self: flex-start;
+  margin: 0 0 1rem 1rem;
+}
+.itemCard .button button {
+  border-radius: 50%;
+  background-color: white;
+  color: rgb(34, 34, 34);
+  padding: 0 .4rem .2rem ;
+  border: 2px solid white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: .3s;
+  transform: rotate(45deg);
+  font-weight: 700;
+}
+.itemCard .button button:hover {
+  background-color: rgb(34, 34, 34);
+  color: white;
+}
+
+@media only screen and (max-width: 960px){
+  .itemCard {
+    padding: .5rem .7rem .5rem .5rem;
+    align-items: center;
+  }
+  .itemCard .card p {
+    display: none;
+  }
+  .itemCard .card h3 {
+    font-size: 1rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    text-align: start !important;
+  }
+  .itemCard .card .imgWrapper {
+    max-width: 50px;
+    min-width: 50px;
+    margin-right: .7rem;
+  }
+  .itemCard .button button {
+    padding: 0rem .3rem .15rem;
+    font-size: .8rem;
+  }
+}
